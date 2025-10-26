@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watering Tools</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #e3f2fd;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #42a5f5, #1e88e5);
+      color: white;
+      text-align: center;
+      padding: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .tools-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .tool-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+      padding-bottom: 20px;
+    }
+
+    .tool-card:hover {
+      transform: scale(1.03);
+    }
+
+    .tool-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .tool-card h3 {
+      font-size: 22px;
+      margin: 15px 0 5px;
+    }
+
+    .tool-card p {
+      font-size: 15px;
+      margin: 0 15px 10px;
+      color: #555;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1565c0;
+      margin: 10px 0;
+    }
+
+    .add-to-cart {
+      padding: 10px 20px;
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Watering Tools</h1>
+    <p>Make watering easier and efficient 💧</p>
+  </header>
+
+  <div class="tools-gallery">
+    <div class="tool-card">
+      <img src="https://m.media-amazon.com/images/I/511DY6Nt1NL.jpg" alt="Watering Can">
+      <h3>Watering Can</h3>
+      <p>Classic design with easy grip and long spout.</p>
+      <div class="price">₹160</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="tool-card">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSt24TTIencZ6v7HLtTDZF_Mdlsn_cuPPI06EiBMsqSv0ERu2yX4DGcOp_rw92Ns5CBF90_hnqqiQLjrt-dNlJBnacaaWv0eYWZC8uFmotyEI8bPu32ksQ3" alt="spr">
+      <h3>Spray Bottle</h3>
+      <p>Perfect for misting delicate indoor plants.</p>
+      <div class="price">₹80</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="tool-card">
+      <img src="https://m.media-amazon.com/images/I/61+3pOhPxAL._AC_UF1000,1000_QL80_.jpg" alt="Drip Irrigation Kit">
+      <h3>Drip Irrigation Kit</h3>
+      <p>Automatic system for balcony or terrace gardens.</p>
+      <div class="price">₹320</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="tool-card">
+      <img src="https://rukminim2.flixcart.com/image/850/1000/kzk6bgw0/garden-sprayer/v/g/e/2-garden-pump-pressure-sprayer-lawn-sprinkler-water-mister-spray-original-imagbjcbq6wrcfxd.jpeg?q=20&crop=false" alt="Pressure Sprayer">
+      <h3>Pressure Sprayer</h3>
+      <p>High-pressure tool for large gardens.</p>
+      <div class="price">₹299</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="tool-card">
+      <img src="https://m.media-amazon.com/images/I/91GBV1RaomL._AC_UF1000,1000_QL80_.jpg" alt="Hose Pipe with Nozzle">
+      <h3>Hose Pipe with Nozzle</h3>
+      <p>Flexible hose with adjustable spray modes.</p>
+      <div class="price">₹450</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+  <script src="cart.js"></script>
+
+</body>
+</html>

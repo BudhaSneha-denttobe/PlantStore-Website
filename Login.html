@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #afface;
+    }
+
+    .contact-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10%;
+      flex-wrap: wrap;
+    }
+
+    .form-container {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .form-container h1 {
+      font-size: 36px;
+      color: #1f762e;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      outline: none;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    button {
+      padding: 14px;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    .image-container {
+      flex: 1;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-container {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-section">
+    <div class="form-container">
+      <h1>Contact <strong>Us</strong></h1>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="number" placeholder="Mobile Number" required />
+        <textarea placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="image-container">
+      <img src="https://media3.giphy.com/media/nnvg19xdnA4cgKcfQY/giphy.gif?cid=6c09b952dpk82a4i87fs2e9yecrjkbtszqns880v0jplyu3w&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="Girl with plants"/>
+    </div>
+  </div>
+
+</body>
+</html>

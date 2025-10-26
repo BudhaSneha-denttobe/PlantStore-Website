@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seed Collection</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fef6e4, #e0f7fa);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ffb347, #ffcc33);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 46px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .seed-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 50px;
+    }
+
+    .seed-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      text-align: center;
+      padding-bottom: 25px;
+    }
+
+    .seed-card:hover {
+      transform: scale(1.03);
+    }
+
+    .seed-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .seed-card h3 {
+      font-size: 26px;
+      margin: 15px 0 5px;
+      color: #2d3748;
+    }
+
+    .seed-card p {
+      font-size: 18px;
+      color: #555;
+      margin: 5px 15px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #38a169;
+      margin: 10px 0;
+    }
+
+    .add-to-cart {
+      padding: 10px 20px;
+      background-color: #ff7043;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 17px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Premium Seed Collection</h1>
+    <p>Grow your own paradise 🌸🌿</p>
+  </header>
+
+  <div class="seed-gallery">
+    <!-- Sunflower Seeds -->
+    <div class="seed-card">
+      <img src="https://www.allthatgrows.in/cdn/shop/products/H08.jpg?v=1598080499" alt="corriender">
+      <p>Healthy</p>
+      <div class="price">₹150</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <!-- Basil Seeds -->
+    <div class="seed-card">
+        <img src="https://www.allthatgrows.in/cdn/shop/files/ATG-Showcase_Design.jpg?v=1684739524" alt="Basil">
+      <h3>Basil Seeds</h3>
+      <p>Grow fresh herbs for your kitchen with ease!</p>
+      <div class="price">₹50</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <!-- Tomato Seeds -->
+    <div class="seed-card">
+      <img src="https://www.allthatgrows.in/cdn/shop/products/V35.jpg?v=1598080204" alt="Tomato Seeds">
+      <h3>Tomato Seeds</h3>
+      <p>Juicy red tomatoes, straight from your garden.</p>
+      <div class="price">₹70</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <!-- Lavender Seeds -->
+    <div class="seed-card">
+      <img src="https://www.allthatgrows.in/cdn/shop/products/H12.jpg?v=1598076805" alt="Lavender Seeds">
+      <h3>Lavender Seeds</h3>
+      <p>Beautiful scent and soothing color for your yard.</p>
+      <div class="price">₹80</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <!-- Chili Seeds -->
+    <div class="seed-card">
+      <img src="https://www.allthatgrows.in/cdn/shop/products/V22.jpg?v=1598079243" alt="Chili Seeds">
+      <h3>Broccoli Seeds</h3>
+      <p>Healthy</p>
+      <div class="price">₹90</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+  <script src="cart.js"></script>
+
+</body>
+</html>

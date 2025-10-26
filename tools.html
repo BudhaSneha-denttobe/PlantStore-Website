@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gardening Tools</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff8a65, #ff7043);
+      color: white;
+      text-align: center;
+      padding: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .tools-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .tool-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+      padding-bottom: 20px;
+    }
+
+    .tool-card:hover {
+      transform: scale(1.03);
+    }
+
+    .tool-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .tool-card h3 {
+      font-size: 22px;
+      margin: 15px 0 5px;
+    }
+
+    .tool-card p {
+      font-size: 15px;
+      margin: 0 15px 10px;
+      color: #555;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #d84315;
+      margin: 10px 0;
+    }
+
+    .add-to-cart {
+      padding: 10px 20px;
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gardening Tools</h1>
+    <p>All the essentials for digging, pruning, and planting 🛠️🌱</p>
+  </header>
+
+  <div class="tools-gallery">
+    <div class="tool-card">
+      <img src="https://m.media-amazon.com/images/I/51jA+fU9d0L._AC_UF1000,1000_QL80_.jpg" alt="Hand Trowel">
+      <h3>Hand Trowel</h3>
+      <p>Perfect for digging small holes and transplanting plants.</p>
+      <div class="price">₹120</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="tool-card">
+      <img src="https://kreateworld.in/cdn/shop/products/2edd9ad4-624a-4c47-9381-ddbab69f6b6c.jpg?v=1673863811" alt="Pruning Shears">
+      <h3>Pruning Shears</h3>
+      <p>Cut and trim plants with ease and precision.</p>
+      <div class="price">₹190</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="tool-card">
+      <img src="https://m.media-amazon.com/images/I/61iVk2dgvdL._AC_UF1000,1000_QL80_.jpg" alt="Weeder Tool">
+      <h3>Weeder Tool</h3>
+      <p>Remove unwanted weeds from your garden quickly.</p>
+      <div class="price">₹95</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="tool-card">
+      <img src="https://abtec.in/wp-content/uploads/2023/12/fork.jpg" alt="Garden Fork">
+      <h3>Garden Fork</h3>
+      <p>Loosen, lift, and turn over soil effortlessly.</p>
+      <div class="price">₹210</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="tool-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgAHgVge2D0Prw3vbQ8wbny6hnTVYqgVvgg&s" alt="Transplanter">
+      <h3>Transplanter</h3>
+      <p>Helps you move plants with minimal root damage.</p>
+      <div class="price">₹130</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+  <script src="cart.js"></script>
+
+</body>
+</html>

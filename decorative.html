@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Decorative Items</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fce4ec, #e0f7fa);
+      color: #444;
+    }
+
+    header {
+      background: linear-gradient(to right, #f48fb1, #80deea);
+      color: white;
+      text-align: center;
+      padding: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .decor-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 50px;
+    }
+
+    .decor-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+      padding-bottom: 20px;
+    }
+
+    .decor-card:hover {
+      transform: scale(1.03);
+    }
+
+    .decor-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .decor-card h3 {
+      font-size: 22px;
+      margin: 15px 0 5px;
+    }
+
+    .decor-card p {
+      font-size: 15px;
+      margin: 0 15px 10px;
+      color: #555;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #d81b60;
+      margin: 10px 0;
+    }
+
+    .add-to-cart {
+      padding: 10px 20px;
+      background-color: #ec407a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #d81b60;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Decorative Garden Items</h1>
+    <p>Add charm and personality to your garden space ✨</p>
+  </header>
+
+  <div class="decor-gallery">
+    <div class="decor-card">
+      <img src="https://chalkinteriors.london/cdn/shop/products/ClusterAntique786.jpg?v=1632313334&width=860" alt="Fairy Lights">
+      <h3>Fairy Lights</h3>
+      <p>Enchanting lights to give your plants a magical glow.</p>
+      <div class="price">₹180</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="decor-card">
+      <img src="https://m.media-amazon.com/images/I/71-YOx16JrL._AC_UF894,1000_QL80_.jpg" alt="Mini Garden Statues">
+      <h3>Mini Garden Statues</h3>
+      <p>Cute ceramic animals for garden corners and pots.</p>
+      <div class="price">₹250</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="decor-card">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQPW2glHlelQ9wVyaUDR43VQf3axD3PUdPQIno-HsUIRzGu42OyHQ4qQfE0m0UHWbp-rxDZArdtkafDr6Nz_QDq01z4RK6z81NjfLA6_YJW" alt="Wind Chimes">
+      <h3>Wind Chimes</h3>
+      <p>Relaxing sounds with every breeze through your garden.</p>
+      <div class="price">₹220</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="decor-card">
+      <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/39b039c5-11f8-42f9-ac15-4d1811bedba3.__CR0,0,970,600_PT0_SX970_V1___.jpg" alt="Colorful Pebbles">
+      <h3>Colorful Pebbles</h3>
+      <p>Bright stones for decorating plant pots and pathways.</p>
+      <div class="price">₹90</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="decor-card">
+      <img src="https://m.media-amazon.com/images/I/61aRLdbP1jL.jpg" alt="Hanging Lanterns">
+      <h3>Hanging Lanterns</h3>
+      <p>Stylish lanterns to light up your outdoor evenings.</p>
+      <div class="price">₹300</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+  <script src="cart.js"></script>
+
+</body>
+</html>

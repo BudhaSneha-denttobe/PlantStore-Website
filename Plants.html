@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Store - Our Plants</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0fdf4;
+      color: #2f855a;
+    }
+
+    header {
+      background-color: #38a169;
+      padding: 25px;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .plant-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 50px;
+    }
+
+    .plant-card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+      text-align: center;
+      padding-bottom: 25px;
+    }
+
+    .plant-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .plant-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .plant-card h3 {
+      margin: 20px 0 10px;
+      font-size: 30px;
+    }
+
+    .plant-card p {
+      color: #4a5568;
+      font-size: 16px;
+      padding: 0 15px;
+    }
+
+    .add-to-cart {
+      margin-top: 15px;
+      padding: 12px 25px;
+      background-color: #38a169;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .add-to-cart:hover {
+      background-color: #2f855a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Plants</h1>
+    <p style="font-size: 28px;">Choose your favorite green friend 🌿</p>
+  </header>
+
+  <div class="plant-gallery">
+    <div class="plant-card">
+      <img src="https://plus.unsplash.com/premium_photo-1673969608352-ec2d84279614?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Aloe Vera">
+      <h3>Snake Plant</h3>
+      <h2 class="price">₹300</h2>
+
+      <p>air-purifying properties and low-maintenance nature</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="plant-card">
+      <img src="https://plus.unsplash.com/premium_photo-1674237276501-595398f90f87?q=80&w=1923&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Snake Plant">
+      <h3>Peperomia</h3>
+      <h2 class="price">₹350</h2>
+
+      <p>This Plant can remove harmful chemical particles from the air</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="plant-card">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-crassula-ovata-jade-plant-money-plant-royalty-free-image-1722349156.jpg?crop=0.668xw:1.00xh;0.194xw,0&resize=1120:*" alt="Jade Plant">
+      <h3>Jade Plant</h3>
+      <h2 class="price">₹400</h2>
+
+      <p>Elegant and beautiful for any room</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="plant-card">
+      <img src="https://i0.wp.com/deepgreenpermaculture.com/wp-content/uploads/2024/04/Peace-lily-191823-a.png?ssl=1" alt="Peace lily">
+      <h3>Peace Lily</h3>
+      <h2 class="price">₹500</h2>
+
+      
+
+      <p>Fast-growing and easy to care for</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="plant-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6-CzPqQ9USMdJ1_mN9eZt9Y0ssARjdPucUA&s" alt="Succulent">
+      <h3>Spider Plant</h3>
+      <h2 class="price">₹450</h2>
+
+      <p>Adorable and compact. Great for desks!</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+  <script src="cart.js"></script>
+
+</body>
+</html>

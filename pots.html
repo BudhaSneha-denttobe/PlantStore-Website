@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pots & Planters</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0fdf4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #81c784, #66bb6a);
+      color: white;
+      text-align: center;
+      padding: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .pots-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .pot-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+      padding-bottom: 20px;
+    }
+
+    .pot-card:hover {
+      transform: scale(1.03);
+    }
+
+    .pot-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .pot-card h3 {
+      font-size: 22px;
+      margin: 15px 0 5px;
+    }
+
+    .pot-card p {
+      font-size: 15px;
+      margin: 0 15px 10px;
+      color: #555;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2e7d32;
+      margin: 10px 0;
+    }
+
+    .add-to-cart {
+      padding: 10px 20px;
+      background-color: #388e3c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pots & Planters</h1>
+    <p>Stylish homes for your plants 🌿</p>
+  </header>
+
+  <div class="pots-gallery">
+    <div class="pot-card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/5/AE/ED/LH/87101299/cutting-ceramic-gamla-3052-4-h-x-3-5-d.jpg" alt="ceramic">
+      <h3>Ceramic Pot</h3>
+      <p>Elegant and durable for indoor use.</p>
+      <div class="price">₹199</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="pot-card">
+<img src="https://m.media-amazon.com/images/I/81Qiu26zi1L.jpg" alt="ter" >
+ <h3>Terracotta Pot</h3>
+      <p>Classic design with earthy texture.</p>
+      <div class="price">₹120</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+
+    <div class="pot-card">
+      <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRIzCUIWByCJTwMmuv1ugJr2fHZ-NKseIXxNbc2nOAYtPADDY5DxdEbOyWmjtqG3FDbJY1woqXggNXH22OnPRiVs8bzVNeQVzxe4TGxag-QOqX1eObqQpzS" alt="Plastic Pot Set">
+      <h3>Plastic Pot Set</h3>
+      <p>Lightweight and colorful – 5 pack.</p>
+      <div class="price">₹180</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="pot-card">
+      <img src="https://m.media-amazon.com/images/I/61BAwj8ZvdL._SY879_.jpg" alt="Hanging Planter">
+      <h3>Hanging Planter</h3>
+      <p>Great for balconies and windows.</p>
+      <div class="price">₹220</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+  <script src="cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gardening Gloves</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1f8e9;
+      color: #3e3e3e;
+    }
+
+    header {
+      background: linear-gradient(to right, #8bc34a, #558b2f);
+      color: white;
+      text-align: center;
+      padding: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .gloves-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .glove-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+      padding-bottom: 20px;
+    }
+
+    .glove-card:hover {
+      transform: scale(1.03);
+    }
+
+    .glove-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .glove-card h3 {
+      font-size: 22px;
+      margin: 15px 0 5px;
+    }
+
+    .glove-card p {
+      font-size: 15px;
+      margin: 0 15px 10px;
+      color: #555;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #33691e;
+      margin: 10px 0;
+    }
+
+    .add-to-cart {
+      padding: 10px 20px;
+      background-color: #689f38;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #558b2f;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gardening Gloves</h1>
+    <p>Protect your hands while digging, planting & pruning 🌱</p>
+  </header>
+
+  <div class="gloves-gallery">
+    <div class="glove-card">
+      <img src="https://m.media-amazon.com/images/I/71HP9TtpvwS._AC_UF894,1000_QL80_.jpg" alt="Cotton Gloves">
+      <h3>Cotton Gloves</h3>
+      <p>Soft and breathable for light gardening tasks.</p>
+      <div class="price">₹75</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="glove-card">
+      <img src="https://m.media-amazon.com/images/I/71pgP43dwOL.jpg" alt="Rubber Coated Gloves">
+      <h3>Rubber Coated Gloves</h3>
+      <p>Grip-friendly gloves perfect for handling tools.</p>
+      <div class="price">₹110</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="glove-card">
+      <img src="https://m.media-amazon.com/images/I/61h82L7FxqL._AC_UF1000,1000_QL80_.jpg" alt="Thorn Resistant Gloves">
+      <h3>Thorn Resistant Gloves</h3>
+      <p>Durable gloves for handling prickly plants.</p>
+      <div class="price">₹180</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="glove-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRatY120ZLmAPdLXn66VJxoRr6zXRglGdPctg&s" alt="Kids Gardening Gloves">
+      <h3>Kids Gardening Gloves</h3>
+      <p>Colorful gloves designed for little gardeners.</p>
+      <div class="price">₹60</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="glove-card">
+      <img src="https://m.media-amazon.com/images/I/719E5hSIq0L._AC_UY1000_.jpg" alt="Waterproof Gloves">
+      <h3>Waterproof Gloves</h3>
+      <p>Keep your hands dry while working with water.</p>
+      <div class="price">₹140</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+  <script src="cart.js"></script>
+
+</body>
+</html>
