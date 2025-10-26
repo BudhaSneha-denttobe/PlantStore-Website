@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessories - Plant Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fff3e0);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #66bb6a, #43a047);
+      color: white;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 50px;
+    }
+
+    .category-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .category-card h3 {
+      font-size: 24px;
+      margin: 15px 0;
+      color: #2e7d32;
+    }
+
+    .explore-button {
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background-color: #43a047;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .explore-button:hover {
+      background-color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Plant Accessories</h1>
+    <p>Explore everything you need to create a perfect garden 🌼🧤</p>
+  </header>
+
+  <div class="categories">
+    <!-- Pots & Planters -->
+    <div class="category-card">
+        <img src="https://m.media-amazon.com/images/I/51fHmNoWDWL._AC_.jpg" alt="pots">
+      <h3>Pots & Planters</h3>
+      <a href="pots.html" class="explore-button">Explore</a>
+    </div>
+
+    <!-- Watering Tools -->
+    <div class="category-card">
+      <img src="https://www.ugaoo.com/cdn/shop/files/WateringCans_Ugaoo-02.jpg?v=1689399050&width=1100" alt="Watering Tools">
+      <h3>Watering Tools</h3>
+      <a href="watering.html" class="explore-button">Explore</a>
+    </div>
+
+    <!-- Gardening Gloves -->
+    <div class="category-card">
+      <img src="https://m.media-amazon.com/images/I/91Dj-9yDKtL.jpg" alt="Gloves">
+      <h3>Gardening Gloves</h3>
+      <a href="gloves.html" class="explore-button">Explore</a>
+    </div>
+
+    <!-- Garden Tools -->
+    <div class="category-card">
+        <img src="https://m.media-amazon.com/images/I/51XuoYfVm0L._AC_UF1000,1000_QL80_.jpg" alt="tools">
+      <h3>Garden Tools</h3>
+      <a href="tools.html" class="explore-button">Explore</a>
+    </div>
+
+    <!-- Decorative Items -->
+    <div class="category-card">
+      <img src="https://dimestore.in/cdn/shop/products/71xpCaVVuCL._SL1360_6c4a623b-16bc-4e8c-a366-ea6a41bd978a_900x.jpg?v=1643703846" alt="Decorative">
+      <h3>Decorative Items</h3>
+      <a href="decorative.html" class="explore-button">Explore</a>
+    </div>
+  </div>
+
+</body>
+</html>
