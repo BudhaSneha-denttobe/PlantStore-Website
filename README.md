@@ -1,4 +1,4 @@
-# PlantStore-Website
+# YourPlantStore-Website
 PlantStore Website is an interactive and user-friendly e-commerce website designed for plant enthusiasts. It allows users to browse, explore, and purchase plants, seeds, and planting accessories. The website is visually appealing, responsive, and provides a seamless shopping experience.
 
 PlantStore Website
