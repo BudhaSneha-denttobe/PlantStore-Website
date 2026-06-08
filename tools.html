@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gardening Tools</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff8a65, #ff7043);
+      color: white;
+      text-align: center;
+      padding: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .tools-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .tool-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+      padding-bottom: 20px;
+    }
+
+    .tool-card:hover {
+      transform: scale(1.03);
+    }
+
+    .tool-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .tool-card h3 {
+      font-size: 22px;
+      margin: 15px 0 5px;
+    }
+
+    .tool-card p {
+      font-size: 15px;
+      margin: 0 15px 10px;
+      color: #555;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #d84315;
+      margin: 10px 0;
+    }
+
+    .add-to-cart {
+      padding: 10px 20px;
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #e64a19;
+    }
+
+    .site-header {
+      background: linear-gradient(to right, #a8e6cf, #dcedc1);
+      padding: 30px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-header h2 {
+      margin: 0;
+      font-size: 36px;
+      color: #2e7d32;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .site-header nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    .site-header nav a {
+      margin: 0 18px;
+      text-decoration: none;
+      color: #1b5e20;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .site-header nav a:hover {
+      color: #2e7d32;
+    }
+
+    .back-link {
+      margin: 20px 50px 0;
+      font-size: 18px;
+    }
+
+    .back-link a {
+      color: #1b5e20;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px 16px;
+      border-radius: 12px;
+      border: 1px solid #c8e6c9;
+      display: inline-flex;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      transition: background-color 0.2s ease;
+    }
+
+    .back-link a:hover {
+      background-color: #f0fff4;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <h2>Plant Store</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Plants.html">Plants</a>
+      <a href="Seeds.html">Seeds</a>
+      <a href="Accessories.html">Accessories</a>
+      <a href="cart.html">Cart</a>
+      <a href="Login.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <p class="back-link"><a href="Accessories.html">← Back to Accessories</a></p>
+
+  <header>
+    <h1>Gardening Tools</h1>
+    <p>All the essentials for digging, pruning, and planting 🛠️🌱</p>
+  </header>
+
+  <div class="tools-gallery">
+    <div class="tool-card">
+      <img src="https://m.media-amazon.com/images/I/51jA+fU9d0L._AC_UF1000,1000_QL80_.jpg" alt="Hand Trowel">
+      <h3>Hand Trowel</h3>
+      <p>Perfect for digging small holes and transplanting plants.</p>
+      <div class="price">₹120</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="tool-card">
+      <img src="https://i5.walmartimages.com/asr/c45b8ada-8577-4740-ad98-f5d77cb7b88c.dca5ff90eb0ef005df4d9e0c0c993aa8.jpeg" alt="Pruning Shears">
+      <h3>Pruning Shears</h3>
+      <p>Cut and trim plants with ease and precision.</p>
+      <div class="price">₹190</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="tool-card">
+      <img src="https://m.media-amazon.com/images/I/61iVk2dgvdL._AC_UF1000,1000_QL80_.jpg" alt="Weeder Tool">
+      <h3>Weeder Tool</h3>
+      <p>Remove unwanted weeds from your garden quickly.</p>
+      <div class="price">₹95</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="tool-card">
+      <img src="data:image/jpeg;base64,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" alt="Garden Fork">
+      <h3>Garden Fork</h3>
+      <p>Loosen, lift, and turn over soil effortlessly.</p>
+      <div class="price">₹210</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="tool-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgAHgVge2D0Prw3vbQ8wbny6hnTVYqgVvgg&s" alt="Transplanter">
+      <h3>Transplanter</h3>
+      <p>Helps you move plants with minimal root damage.</p>
+      <div class="price">₹130</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+  <script src="cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Store - Cart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #f0fdf4;
+      color: #2f855a;
+    }
+
+    .site-header {
+      background: linear-gradient(to right, #a8e6cf, #dcedc1);
+      padding: 30px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    }
+.site-header h2 {
+      margin: 0;
+      font-size: 36px;
+      color: #2e7d32;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+.site-header nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-header nav a {
+  margin: 0 18px;
+  text-decoration: none;
+  color: #1b5e20;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+    
+
+    .site-header nav a:hover {
+      color: #2e7d32;
+    }
+
+    /* Cart Section */
+    .cart-container {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart-container h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .cart-items {
+      list-style: none;
+      padding: 0;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .cart-items li {
+      padding: 15px 0;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .total {
+      text-align: right;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .place-order-btn {
+      display: block;
+      margin: 0 auto;
+      padding: 15px 40px;
+      font-size: 18px;
+      background-color: #38a169;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .place-order-btn:hover {
+      background-color: #2f855a;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <h2>Plant Store</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Plants.html">Plants</a>
+      <a href="Seeds.html">Seeds</a>
+      <a href="Accessories.html">Accessories</a>
+      <a href="cart.html">Cart</a>
+      <a href="Login.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Cart Section -->
+  <div class="cart-container">
+    <h2>Your Cart 🛒</h2>
+    <ul class="cart-items" id="cart-items">
+      <!-- Cart items will be populated here -->
+    </ul>
+    <div class="total" id="total-cost">Total: ₹0</div>
+    <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <!-- Cart JavaScript -->
+  <script src="cart.js"></script>
+</body>
+</html>
